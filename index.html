@@ -9,7 +9,10 @@
 <meta property="og:site_name" content="Simplificate">
 <meta property="og:title" content="Simplificate · Roberta Cunha | Growth Marketing Consultant">
 <meta property="og:description" content="Simplificate: performance marketing, paid media and campaign management for B2B and B2C teams.">
-<meta property="og:image" content="img/portrait.jpg">
+<meta property="og:url" content="https://www.simplificate.nl/">
+<meta property="og:image" content="https://www.simplificate.nl/img/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.simplificate.nl/">
 <meta name="author" content="Roberta Cunha">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,6 +163,17 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 .role h4{font-size:1.06rem}
 .role span{display:block;margin-top:8px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 
+/* cv */
+.cv{margin-top:36px;border:1px solid var(--border);background:#fff}
+.cv-head{padding:14px 22px;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);background:var(--secondary)}
+.cv-row{display:grid;grid-template-columns:1fr;gap:4px 18px;padding:18px 22px;border-top:1px solid var(--border)}
+.cv-row:nth-child(2){border-top:0}
+@media(min-width:640px){.cv-row{grid-template-columns:110px 1fr}}
+.cv-row .when{font-family:var(--mono);font-size:.75rem;color:var(--accent);padding-top:4px;white-space:nowrap}
+.cv-row h4{font-size:1.02rem}
+.cv-row span{display:block;margin-top:4px;font-size:.78rem;letter-spacing:.06em;color:var(--muted)}
+.cv-row p{margin-top:8px;font-size:.9rem;color:var(--muted);line-height:1.6}
+
 /* referrals */
 #results{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--secondary);padding:96px 0}
 .quote .big{font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--primary)}
@@ -206,7 +220,7 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 footer.site{border-top:1px solid var(--border);padding:40px 0}
 .foot{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
 .foot .brand span{font-size:1rem}
-.foot nav{display:flex;gap:28px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.foot nav{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 .foot nav a:hover{color:var(--primary)}
 .foot .copy{font-size:.85rem;color:var(--muted)}
 
@@ -217,7 +231,7 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Simplificate","founder":{"@type":"Person","name":"Roberta Cunha","jobTitle":"Growth Marketing Consultant","sameAs":["https://www.linkedin.com/in/robertarcunha"]},"description":"Growth marketing consultancy: paid media audits, demand generation, HubSpot automation, go-to-market launches and Brazil market entry for B2B SaaS and e-commerce.","email":"robertacunha@email.com","areaServed":["Netherlands","Europe","Brazil"],"address":{"@type":"PostalAddress","addressLocality":"Amsterdam","addressCountry":"NL"},"knowsLanguage":["en","pt","es","nl"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Simplificate","url":"https://www.simplificate.nl/","image":"https://www.simplificate.nl/img/portrait.jpg","founder":{"@type":"Person","name":"Roberta Cunha","jobTitle":"Growth Marketing Consultant","sameAs":["https://www.linkedin.com/in/robertarcunha"]},"description":"Growth marketing consultancy: paid media audits, demand generation, HubSpot automation, go-to-market launches and Brazil market entry for B2B SaaS and e-commerce.","email":"robertacunha@email.com","areaServed":["Netherlands","Europe","Brazil"],"address":{"@type":"PostalAddress","addressLocality":"Amsterdam","addressCountry":"NL"},"knowsLanguage":["en","pt","es","nl"]}
 </script>
 </head>
 <body>
@@ -232,7 +246,7 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
       <a href="#services">Services</a>
       <a href="#process">Process</a>
       <a href="#skills">Skills</a>
-      <a href="#about">About</a>
+      <a href="#about">Consultant</a>
       <a href="#results">Results</a>
     </nav>
     <a href="#contact" class="btn btn-primary nav-cta">Work with me</a>
@@ -262,12 +276,6 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
   </div>
 </section>
 
-<div class="marquee">
-  <div class="marquee-track">
-    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>Johnson &amp; Johnson</span><span>Dyson</span>
-    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>Johnson &amp; Johnson</span><span>Dyson</span>
-  </div>
-</div>
 
 <section id="services" class="wrap section">
   <div class="split">
@@ -337,8 +345,8 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 <section id="about" class="wrap section">
   <div class="split">
     <div class="reveal">
-      <div class="eyebrow">About</div>
-      <h2>Founder-turned-operator, still obsessed with the funnel.</h2>
+      <div class="eyebrow">Lead consultant</div>
+      <h2>Roberta Cunha. Founder-turned-operator, still obsessed with the funnel.</h2>
       <figure class="figure" aria-label="Growth funnel: diagnose, roadmap, run, report">
 <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
@@ -403,13 +411,14 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
       <p class="body">My background includes founding and scaling a fashion e-commerce brand, and planning six-figure programmatic and paid media budgets for global brands at an IPG Mediabrands agency. In-house at a B2B software consultancy, I took end-to-end ownership of growth, brand, demand and lead generation, from planning and messaging to campaign execution, testing, optimisation and reporting. As Growth Marketing Manager at a B2B SaaS scale-up, I led paid, organic, lifecycle and go-to-market initiatives through continuous experimentation.</p>
       <p class="body">I build custom growth roadmaps tailored to each business's specific needs using a structured growth methodology. Experienced in reading campaign performance through the lens of behavioural psychology and data to understand how people think, decide and act. Quick to adapt to new tools and processes, I use AI tools and workflows daily to produce content, run experiments and scale execution.</p>
       <p class="body">Languages: Portuguese (native), English and Spanish (full professional), Dutch (intermediate). Registered freelancer (ZZP) in the Netherlands.</p>
-      <div class="roles">
-        <div class="role"><h4>Growth Marketing Consultant</h4><span>Simplificate · 2026 to present</span></div>
-        <div class="role"><h4>Growth Marketing Manager</h4><span>B2B SaaS, fashion-tech · Rotterdam</span></div>
-        <div class="role"><h4>Online Growth Marketer</h4><span>B2B software consultancy · The Hague</span></div>
-        <div class="role"><h4>Addressable Specialist, Programmatic</h4><span>Global media agency · Amsterdam</span></div>
-        <div class="role"><h4>Founder &amp; Growth Marketing Specialist</h4><span>Fashion e-commerce · Brazil</span></div>
-        <div class="role"><h4>Master's in Business Research</h4><span>University of Barcelona</span></div>
+      <div class="cv">
+        <div class="cv-head">Career in brief</div>
+        <div class="cv-row"><div class="when">2026 · present</div><div><h4>Growth Marketing Consultant</h4><span>Simplificate · remote, Amsterdam</span><p>Full-funnel growth strategy, paid media audits and testing systems for software, product and service businesses.</p></div></div>
+        <div class="cv-row"><div class="when">2024 · 2025</div><div><h4>Growth Marketing Manager</h4><span>Faslet · B2B SaaS, AI sizing for fashion e-commerce · Rotterdam</span><p>Go-to-market for a product launch, demand generation with ABM, paid, lifecycle and brand through continuous experimentation.</p></div></div>
+        <div class="cv-row"><div class="when">2023 · 2024</div><div><h4>Online Growth Marketer</h4><span>OVSoftware · custom software and IT consultancy · The Hague</span><p>Built the paid acquisition engine from zero; +35% SQLs; developer recruitment campaigns with +60% engagement; member of the strategic committee.</p></div></div>
+        <div class="cv-row"><div class="when">2021 · 2022</div><div><h4>Addressable Specialist (Programmatic &amp; Paid Media)</h4><span>KINESSO · IPG Mediabrands · Amsterdam</span><p>Six-figure budgets across Native, Display, Video, DOOH, CTV and Digital Audio on DV360, Amazon DSP, Yahoo DSP and The Trade Desk. Agency client portfolio: American Express, Amazon Prime Video, Ernst &amp; Young, Dr. Martens, Johnson &amp; Johnson and Dyson.</p></div></div>
+        <div class="cv-row"><div class="when">2019 · 2021</div><div><h4>Founder &amp; Growth Marketing Specialist</h4><span>Fashion e-commerce · Natal, Brazil</span><p>Owned the entire marketing function: brand, positioning, paid search and social, content and retention.</p></div></div>
+        <div class="cv-row"><div class="when">Education</div><div><h4>Master's in Business Research</h4><span>University of Barcelona</span><p>Bachelor's in Business Administration (Potiguar University); Licentiate in International Business, Trade and Commerce (IFRN).</p></div></div>
       </div>
     </div>
   </div>
@@ -426,19 +435,19 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
         <div class="big">+35%</div>
         <p>Sales-qualified leads for a B2B software and IT consultancy, through Search and LinkedIn ABM campaigns built from an empty account, including architecture and conversion tracking.</p>
         <div class="name">Demand generation</div>
-        <div class="role">B2B software consultancy · Netherlands</div>
+        <div class="role">OVSoftware · B2B software consultancy</div>
       </div>
       <div class="quote reveal">
         <div class="big">+60% / +42%</div>
         <p>Engagement and application volume on developer recruitment campaigns on Meta, run alongside the brand and sales funnels.</p>
         <div class="name">Employer branding</div>
-        <div class="role">B2B software consultancy · developer hiring</div>
+        <div class="role">OVSoftware · developer hiring</div>
       </div>
       <div class="quote reveal">
         <div class="big">Six-figure</div>
-        <p>Programmatic and paid media budgets planned, tested and optimised for six global consumer, media, finance and professional-services brands on DV360, Amazon DSP and The Trade Desk.</p>
+        <p>Programmatic and paid media budgets planned, tested and optimised for American Express, Amazon Prime Video, Ernst &amp; Young, Dr. Martens, Johnson &amp; Johnson and Dyson on DV360, Amazon DSP and The Trade Desk.</p>
         <div class="name">Programmatic at scale</div>
-        <div class="role">Global media agency · Amsterdam</div>
+        <div class="role">KINESSO · IPG Mediabrands</div>
       </div>
     </div>
   </div>
@@ -500,7 +509,7 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
     <nav>
       <a href="#services">Services</a>
       <a href="#process">Process</a>
-      <a href="#about">About</a>
+      <a href="#about">Consultant</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="copy">© 2026 Simplificate. All rights reserved.</div>
