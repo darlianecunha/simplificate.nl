@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simplificate — Roberta Cunha | Growth Marketing Consultant</title>
-<meta name="description" content="Simplificate by Roberta Cunha — growth marketing consulting with 6+ years in performance marketing, paid media and end-to-end campaign management for B2B and B2C brands.">
+<title>Simplificate · Roberta Cunha | Growth Marketing Consultant</title>
+<meta name="description" content="Simplificate by Roberta Cunha: growth marketing offers, from a paid media audit to demand generation sprints, HubSpot automation, go-to-market launches and Brazil market entry.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Simplificate">
-<meta property="og:title" content="Simplificate — Roberta Cunha | Growth Marketing Consultant">
+<meta property="og:title" content="Simplificate · Roberta Cunha | Growth Marketing Consultant">
 <meta property="og:description" content="Simplificate: performance marketing, paid media and campaign management for B2B and B2C teams.">
-<meta property="og:image" content="https://horizons-cdn.hostinger.com/328f15b3-260b-4a8a-b410-94c9385951e1/8902127ddc4fe5bd673d02a3e3f2cf99.png">
-<link rel="icon" href="https://horizons-cdn.hostinger.com/328f15b3-260b-4a8a-b410-94c9385951e1/5f2de21e4a084000552c330dea69b866.png">
+<meta property="og:image" content="img/portrait.jpg">
+<meta name="author" content="Roberta Cunha">
+<link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -66,7 +67,6 @@ nav.main a:hover{color:var(--primary)}
 .hero{position:relative;display:grid;gap:56px;padding-top:88px;padding-bottom:96px}
 @media(min-width:900px){.hero{grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding-top:104px;padding-bottom:112px}}
 .hero-eyebrow{display:flex;align-items:center;gap:16px;color:var(--muted);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase}
-.hero-eyebrow::before{content:"";width:44px;height:1px;background:var(--primary)}
 h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;margin:24px 0 0}
 .hl{background:rgba(20,85,163,.22);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .06em}
 .hero p.lede{margin-top:26px;max-width:34rem;font-size:1.06rem}
@@ -78,10 +78,12 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;max-width:36rem}
 .stats .n{font-family:var(--display);font-size:2.2rem;line-height:1;color:var(--primary)}
 .stats .l{margin-top:10px;font-size:.85rem;color:var(--muted);line-height:1.45}
-.portrait{position:relative}
-.portrait img{position:relative;z-index:1;aspect-ratio:3/4;width:100%;object-fit:cover;object-position:top;box-shadow:0 18px 40px -24px rgba(19,34,53,.5)}
-.portrait::after{content:"";position:absolute;inset:28px -18px -18px 28px;border:1px solid var(--border);z-index:0}
-.badge{position:absolute;z-index:2;left:0;bottom:38px;background:var(--primary);color:#fff;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;padding:10px 18px}
+.portrait{position:relative;width:100%;max-width:260px;margin:0 auto}
+@media(min-width:640px){.portrait{max-width:340px}}
+@media(min-width:900px){.portrait{margin:0 0 0 auto}}
+.portrait img{position:relative;z-index:1;aspect-ratio:4/5;width:100%;object-fit:cover;object-position:top;box-shadow:0 18px 40px -24px rgba(19,34,53,.5)}
+.portrait::after{content:"";position:absolute;inset:22px -14px -14px 22px;border:1px solid var(--border);z-index:0}
+.badge{position:absolute;z-index:2;left:0;bottom:28px;background:var(--primary);color:#fff;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;padding:10px 18px}
 
 /* marquee */
 .marquee{background:var(--primary);color:#fff;overflow:hidden;padding:18px 0;white-space:nowrap}
@@ -102,6 +104,28 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 .item .num{font-family:var(--mono);font-size:.78rem;color:var(--accent);padding-top:6px}
 .item h3{font-size:1.35rem}
 .item p{margin-top:8px;color:var(--muted);font-size:.97rem;line-height:1.65}
+.item .head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+.item .price{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;color:var(--primary);background:var(--secondary);border:1px solid var(--border);padding:4px 10px;white-space:nowrap}
+.item.lead{background:var(--cream);margin:0 -20px;padding:26px 20px}
+@media(min-width:640px){.item.lead{margin:0 -24px;padding:28px 24px}}
+.item.lead .tag{display:inline-block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.group{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);padding:34px 0 10px}
+.group:first-child{padding-top:0}
+.pricing-note{margin-top:22px;font-size:.85rem;color:var(--muted);line-height:1.6}
+.item ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.item li{font-size:.74rem;letter-spacing:.04em;color:var(--primary);background:var(--secondary);border:1px solid var(--border);padding:4px 10px}
+.item .for{margin-top:10px;font-size:.82rem;color:var(--muted)}
+.item .for b{font-weight:600;color:var(--fg)}
+
+/* process */
+.steps{display:grid;grid-template-columns:1fr;border:1px solid var(--border)}
+@media(min-width:640px){.steps{grid-template-columns:1fr 1fr}}
+.step{padding:28px 26px;border-top:1px solid var(--border)}
+@media(min-width:640px){.step:nth-child(odd){border-right:1px solid var(--border)}.step:nth-child(1),.step:nth-child(2){border-top:0}}
+.step:first-child{border-top:0}
+.step .num{font-family:var(--mono);font-size:.78rem;color:var(--accent)}
+.step h3{font-size:1.25rem;margin-top:14px}
+.step p{margin-top:8px;color:var(--muted);font-size:.93rem;line-height:1.6}
 
 /* skills */
 #skills{background:var(--primary);color:#fff;padding:96px 0}
@@ -121,7 +145,8 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 
 /* about */
 #about h2{font-size:clamp(2rem,3.4vw,2.7rem);line-height:1.2;margin-top:22px}
-#about .figure{margin-top:36px;border:1px solid var(--border);aspect-ratio:3/2;object-fit:cover;width:100%}
+#about .figure{margin:36px 0 0;border:1px solid var(--border);width:100%;background:var(--cream)}
+#about .figure svg{display:block;width:100%;height:auto}
 .about-lead{font-family:var(--display);font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.45;color:var(--primary)}
 #about .body{margin-top:26px;color:var(--muted);font-size:1rem;line-height:1.75}
 #about .body + .body{margin-top:20px}
@@ -136,8 +161,9 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 .role span{display:block;margin-top:8px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 
 /* referrals */
-#referrals{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--secondary);padding:96px 0}
-#referrals h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin-top:20px;max-width:24ch}
+#results{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--secondary);padding:96px 0}
+.quote .big{font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--primary)}
+#results h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin-top:20px;max-width:24ch}
 .quotes{display:grid;gap:44px;margin-top:60px}
 @media(min-width:900px){.quotes{grid-template-columns:repeat(3,1fr);gap:48px}}
 .quote .mark{font-family:var(--display);font-size:2.4rem;line-height:.6;color:var(--primary)}
@@ -159,6 +185,23 @@ h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.02em;mar
 .btn-outline:hover{background:rgba(255,255,255,.1)}
 .loc{margin-top:32px;display:flex;align-items:center;gap:10px;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)}
 
+/* contact form */
+.contact-grid{display:grid;gap:40px;margin-top:38px}
+@media(min-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:start}}
+.cform{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.22);padding:28px}
+.cform label{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:8px}
+.cform .f{margin-bottom:18px}
+.cform input,.cform textarea,.cform select{width:100%;font-family:var(--sans);font-size:.95rem;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.3);padding:12px 14px;outline:none;transition:border-color .2s}
+.cform input:focus,.cform textarea:focus,.cform select:focus{border-color:#fff}
+.cform select option{color:var(--fg)}
+.cform ::placeholder{color:rgba(255,255,255,.5);opacity:1}
+.cform textarea{min-height:120px;resize:vertical}
+.cform .row{display:grid;gap:18px}
+@media(min-width:640px){.cform .row{grid-template-columns:1fr 1fr}}
+.cform .btn-light{width:100%;justify-content:center;cursor:pointer;border:0;font-family:var(--sans)}
+.cform .hint{margin-top:12px;font-size:.78rem;color:rgba(255,255,255,.6);max-width:none}
+.cform .ok{display:none;margin-top:14px;font-size:.9rem;color:#fff;background:rgba(255,255,255,.14);padding:12px 14px}
+
 /* footer */
 footer.site{border-top:1px solid var(--border);padding:40px 0}
 .foot{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
@@ -172,27 +215,25 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.marquee-track{animation:none}}
 
-/* === SELETOR DE VERSAO (remover este bloco para publicar sozinho) === */
-.vswitch{position:fixed;right:16px;bottom:16px;z-index:100;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);border:1px solid rgba(20,85,163,.22);border-radius:999px;padding:7px 14px;font-family:"Inter",system-ui,sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#5b6b7f;box-shadow:0 10px 26px -18px rgba(19,34,53,.6);backdrop-filter:blur(8px)}
-.vswitch a{color:#1455a3;border-bottom:1px solid transparent;transition:border-color .25s}
-.vswitch a:hover{border-color:#1455a3}
-@media(max-width:520px){.vswitch{font-size:.6rem;padding:6px 11px}}
-/* === FIM DO SELETOR DE VERSAO === */
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Simplificate","founder":{"@type":"Person","name":"Roberta Cunha","jobTitle":"Growth Marketing Consultant","sameAs":["https://www.linkedin.com/in/robertarcunha"]},"description":"Growth marketing consultancy: paid media audits, demand generation, HubSpot automation, go-to-market launches and Brazil market entry for B2B SaaS and e-commerce.","email":"robertacunha@email.com","areaServed":["Netherlands","Europe","Brazil"],"address":{"@type":"PostalAddress","addressLocality":"Amsterdam","addressCountry":"NL"},"knowsLanguage":["en","pt","es","nl"]}
+</script>
 </head>
 <body>
 
 <header class="site">
   <div class="navbar">
     <a href="#top" class="brand">
-      <img src="https://horizons-cdn.hostinger.com/328f15b3-260b-4a8a-b410-94c9385951e1/5f2de21e4a084000552c330dea69b866.png" alt="Simplificate">
+      <img src="img/logo.png" alt="Simplificate">
       <span>Simplificate</span>
     </a>
     <nav class="main">
       <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
-      <a href="#referrals">Referrals</a>
+      <a href="#results">Results</a>
     </nav>
     <a href="#contact" class="btn btn-primary nav-cta">Work with me</a>
   </div>
@@ -203,19 +244,19 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
     <div class="reveal">
       <div class="hero-eyebrow">Simplificate · Growth Marketing Consultant</div>
       <h1>Performance marketing that reads <span class="hl">how people decide</span>.</h1>
-      <p class="lede">Six years of paid media, brand, content and lifecycle work for B2C e-commerce, agency clients and B2B tech teams. I build custom growth roadmaps, run the campaigns, and report on what actually moved.</p>
+      <p class="lede">Six years of paid media, brand, content and lifecycle work for B2C e-commerce, agency clients and B2B tech teams. Tell me what is not moving, and I will tell you what I would test first.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-soft">Start a project <span aria-hidden="true">↗</span></a>
-        <a href="#services" class="link-underline">See how I work</a>
+        <a href="#contact" class="btn btn-soft">Book a paid media audit <span aria-hidden="true">↗</span></a>
+        <a href="#services" class="link-underline">See services</a>
       </div>
       <div class="stats">
         <div><div class="n">6+</div><div class="l">Years across paid, brand &amp; lifecycle</div></div>
-        <div><div class="n">3</div><div class="l">Business models: DTC, agency, B2B SaaS</div></div>
-        <div><div class="n">4</div><div class="l">Global brands managed programmatically</div></div>
+        <div><div class="n">15+</div><div class="l">Business operations run across DTC, agency and B2B SaaS</div></div>
+        <div><div class="n">6</div><div class="l">Global brands managed programmatically</div></div>
       </div>
     </div>
     <div class="portrait reveal">
-      <img src="https://horizons-cdn.hostinger.com/328f15b3-260b-4a8a-b410-94c9385951e1/8902127ddc4fe5bd673d02a3e3f2cf99.png" alt="Roberta Cunha, founder of Simplificate">
+      <img src="img/portrait.jpg" loading="eager" fetchpriority="high" alt="Roberta Cunha, founder of Simplificate">
       <div class="badge">Amsterdam · Remote</div>
     </div>
   </div>
@@ -223,8 +264,8 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 
 <div class="marquee">
   <div class="marquee-track">
-    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>OVSoftware</span><span>Faslet</span>
-    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>OVSoftware</span><span>Faslet</span>
+    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>Johnson &amp; Johnson</span><span>Dyson</span>
+    <span>American Express</span><span>Amazon Prime Video</span><span>Ernst &amp; Young</span><span>Dr. Martens</span><span>Johnson &amp; Johnson</span><span>Dyson</span>
   </div>
 </div>
 
@@ -233,20 +274,45 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
     <div class="split-left">
       <div class="inner reveal">
         <div class="eyebrow">Services</div>
-        <h2>Engagements, priced and scoped around one outcome.</h2>
-        <p class="lede">Retainer, project or advisory. Every engagement starts with a diagnosis of the funnel you already have, then a roadmap you can execute with or without me.</p>
+        <h2>Offers scoped around one outcome.</h2>
+        <p class="lede">Every engagement is quoted as a fixed project scope, so the conversation stays on the result rather than the hours. Most clients start with the audit: it is small enough to say yes to, and it tells us both whether a longer engagement makes sense.</p>
+        <p class="pricing-note">Project, retainer or agency white-label capacity. Quotes on request.</p>
       </div>
     </div>
     <div class="reveal">
-      <div class="item"><div class="num">01</div><div><h3>Lead Generation</h3><p>Full-funnel demand capture: offers, landing pages, forms and nurture flows that turn traffic into qualified pipeline.</p></div></div>
-      <div class="item"><div class="num">02</div><div><h3>Growth Marketing</h3><p>A structured growth methodology — hypotheses, experiments, and a prioritised roadmap built around your constraints.</p></div></div>
-      <div class="item"><div class="num">03</div><div><h3>Advertising &amp; Paid Media</h3><p>Programmatic, paid search, paid social and retargeting: planning, buying, creative testing and budget efficiency.</p></div></div>
-      <div class="item"><div class="num">04</div><div><h3>Marketing Consulting</h3><p>Positioning, messaging and channel mix reviewed end to end, with clear priorities for the next two quarters.</p></div></div>
-      <div class="item"><div class="num">05</div><div><h3>Market Research</h3><p>Audience, competitor and category research that grounds the strategy in how buyers actually decide.</p></div></div>
-      <div class="item"><div class="num">06</div><div><h3>Content Strategy</h3><p>Narrative, formats and production workflows — AI-assisted where it speeds execution without diluting the brand.</p></div></div>
-      <div class="item"><div class="num">07</div><div><h3>Digital Marketing</h3><p>SEO foundations, lifecycle email, CRO and analytics wired together so every channel reports on the same numbers.</p></div></div>
-      <div class="item"><div class="num">08</div><div><h3>Social Media Marketing</h3><p>Organic and paid social built as one system: content pillars, community, and always-on distribution.</p></div></div>
-      <div class="item"><div class="num">09</div><div><h3>Business Consulting</h3><p>Go-to-market planning, pricing input and revenue modelling for founders and lean in-house teams.</p></div></div>
+      <div class="group">Start here</div>
+      <div class="item lead"><div class="num">01</div><div><span class="tag">Wedge product</span><div class="head"><h3>Paid Media Audit &amp; Rebuild</h3></div><p>A written, prioritised read on your ad accounts: how they are structured, whether conversion tracking is telling the truth, where budget is being wasted and which three changes would move the numbers first. Delivered in two to three days as a document and a 60-minute walkthrough, then rebuilt with you if you want it done rather than described.</p><ul><li>Account structure review</li><li>Tracking &amp; GA4 / GTM check</li><li>Wasted-spend analysis</li><li>Creative &amp; audience diagnosis</li><li>Prioritised test plan</li><li>Rebuild on request</li></ul><p class="for"><b>For:</b> Teams running Google, Meta, LinkedIn, TikTok or programmatic without an in-house specialist, or wanting a second opinion on an agency.</p></div></div>
+      <div class="group">Growth &amp; demand</div>
+      <div class="item"><div class="num">02</div><div><div class="head"><h3>Demand Generation &amp; ABM Sprint</h3></div><p>A six-week build of a working pipeline engine for B2B: who to target, what to say to them, and campaigns across paid search, LinkedIn and email that hand sales qualified leads with a score attached. You keep the reporting layer and the playbook.</p><ul><li>ICP &amp; segment definition</li><li>Target account list</li><li>LinkedIn ABM + Search campaigns</li><li>Email nurture sequences</li><li>MQL / SQL scoring</li><li>Dashboard &amp; handover</li></ul><p class="for"><b>For:</b> B2B SaaS and services companies that need pipeline, not impressions. Proof: +35% SQLs at a B2B software consultancy.</p></div></div>
+      <div class="item"><div class="num">03</div><div><div class="head"><h3>HubSpot Build &amp; Lifecycle Automation</h3></div><p>HubSpot set up the way marketing and sales will actually use it: lead scoring that reflects buying intent, workflows that nurture and hand over at the right moment, email programmes that run without a person pressing send, and dashboards that answer the questions leadership asks.</p><ul><li>Workflow &amp; lifecycle design</li><li>Lead scoring model</li><li>Email programmes &amp; newsletter</li><li>Landing pages &amp; forms</li><li>Reporting dashboards</li><li>Documentation &amp; training</li></ul><p class="for"><b>For:</b> Teams on HubSpot (or moving to it) where leads fall through the cracks. Hands-on ownership of HubSpot across two companies.</p></div></div>
+      <div class="item"><div class="num">04</div><div><div class="head"><h3>Go-to-Market for a Launch</h3></div><p>One owner for a product, feature or partnership launch: positioning and messaging agreed with sales and product, a channel plan with a date on it, briefs for every asset, and coordinated execution and reporting across paid, organic, email and PR.</p><ul><li>Positioning &amp; messaging</li><li>Channel &amp; timeline plan</li><li>Asset briefs for design / content</li><li>Launch campaign execution</li><li>Sales enablement notes</li><li>Post-launch report</li></ul><p class="for"><b>For:</b> Scale-ups that launch often and rarely have anyone free to run one properly. Directed a B2B SaaS product launch in the Netherlands and the integration partnership launch that followed.</p></div></div>
+      <div class="item"><div class="num">05</div><div><div class="head"><h3>Creative Strategy for Paid Social</h3></div><p>Hooks, angles and ad scripts built from what the performance data says, not from taste. Each sprint delivers a tested set of concepts plus the feedback loop with your editors and designers, so the next round starts from evidence.</p><ul><li>Performance &amp; comment mining</li><li>Hook &amp; angle library</li><li>Ad scripts &amp; storyboards</li><li>Testing matrix</li><li>Creative feedback loop</li><li>Results readout</li></ul><p class="for"><b>For:</b> Brands and agencies on Meta, TikTok and LinkedIn whose strategists are full or whose creative has plateaued.</p></div></div>
+      <div class="group">Content &amp; proof</div>
+      <div class="item"><div class="num">06</div><div><div class="head"><h3>B2B Case Studies &amp; Customer Proof</h3></div><p>Customer stories sales can actually use: I interview the client, write the story around the problem and the number, and package it as a web page, a PDF one-pager and short social cuts. Sold in bundles, because a company that needs one usually needs four.</p><ul><li>Customer interviews</li><li>Written case study</li><li>One-page PDF</li><li>Social &amp; email cuts</li><li>Quote library for sales</li></ul><p class="for"><b>For:</b> B2B teams with happy customers and nothing written down.</p></div></div>
+      <div class="item"><div class="num">07</div><div><div class="head"><h3>LinkedIn Ghostwriting for Founders</h3></div><p>Twelve to sixteen posts a month in the founder's own voice, built from a monthly 45-minute conversation, plus a comment strategy that puts them in the right threads. Recurring, remote, and it compounds month on month.</p><ul><li>Voice &amp; positioning guide</li><li>Monthly content plan</li><li>12–16 posts / month</li><li>Comment &amp; engagement strategy</li><li>Monthly performance review</li></ul><p class="for"><b>For:</b> Founders and executives who know what they think but do not have the time to write it.</p></div></div>
+      <div class="item"><div class="num">08</div><div><div class="head"><h3>Employer Branding &amp; Recruitment Campaigns</h3></div><p>Marketing applied to hiring: an employer value proposition candidates believe, paid campaigns on the platforms where developers and specialists actually are, and landing pages that convert interest into applications.</p><ul><li>Employer value proposition</li><li>Candidate persona &amp; messaging</li><li>Meta / LinkedIn / Reddit campaigns</li><li>Careers landing pages</li><li>Application funnel tracking</li></ul><p class="for"><b>For:</b> Recruitment agencies and tech companies hiring engineers. Developer campaigns with a 60% lift in engagement and 42% more applications.</p></div></div>
+      <div class="group">Specialist</div>
+      <div class="item"><div class="num">09</div><div><div class="head"><h3>Brazil &amp; LatAm Market Entry</h3></div><p>Localisation that is not translation: positioning that fits how Brazilian buyers decide, the real channel mix (including local paid platforms and marketplaces), culturally correct creative, and a launch plan that accounts for payment, logistics and legal realities. Native Portuguese, full professional Spanish, based in the Netherlands, with B2B SaaS experience.</p><ul><li>Market &amp; competitor read</li><li>Positioning &amp; messaging in Portuguese</li><li>Channel &amp; platform plan</li><li>Localised campaigns</li><li>Local partner shortlist</li></ul><p class="for"><b>For:</b> Dutch and European e-commerce and SaaS companies expanding into Brazil or Spanish-speaking Latin America.</p></div></div>
+      <div class="item"><div class="num">10</div><div><div class="head"><h3>E-commerce &amp; Fashion-Tech Growth Audit</h3></div><p>A focused read for fashion and lifestyle e-commerce: acquisition mix and CAC by channel, sizing and returns as a growth lever, lifecycle email and retention, and creative. I have run a store and marketed the technology that fixes the sizing problem, so the recommendations are specific.</p><ul><li>Acquisition &amp; CAC analysis</li><li>Returns &amp; sizing review</li><li>Lifecycle / Klaviyo audit</li><li>Creative &amp; landing page review</li><li>90-day action plan</li></ul><p class="for"><b>For:</b> DTC and fashion-tech brands on Shopify or similar.</p></div></div>
+      <div class="item"><div class="num">11</div><div><div class="head"><h3>AI Marketing Workflows &amp; Training</h3></div><p>A half-day or full-day session for your marketing team, followed by the workflows built and documented for your stack: content production, reporting automation, research and campaign QA with Claude and the rest of the AI toolkit. Run by someone who has operated a marketing function, not only demonstrated the tools.</p><ul><li>Team workshop (½ or 1 day)</li><li>Use-case mapping</li><li>Prompt &amp; workflow library</li><li>Reporting automation</li><li>Documentation &amp; follow-up</li></ul><p class="for"><b>For:</b> Marketing teams that want AI to shorten the week without diluting the brand.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="wrap section">
+  <div class="split">
+    <div class="split-left">
+      <div class="inner reveal">
+        <div class="eyebrow">How I work</div>
+        <h2>Diagnose first, then build only what the diagnosis supports.</h2>
+        <p class="lede">The same four steps whether the engagement is a two-day audit or a six-month retainer. You always know what is being tested, what it costs and what decision it will produce.</p>
+      </div>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="num">01</div><h3>Diagnose</h3><p>Funnel, data and customer behaviour read end to end. Where is the revenue leaking, and why?</p></div>
+      <div class="step"><div class="num">02</div><h3>Roadmap</h3><p>A prioritised plan of experiments, each with a hypothesis, a budget and the decision it will unlock.</p></div>
+      <div class="step"><div class="num">03</div><h3>Run</h3><p>Campaigns, pages, emails and creative built and launched, with AI workflows used wherever they speed execution.</p></div>
+      <div class="step"><div class="num">04</div><h3>Report &amp; hand over</h3><p>Numbers that leadership can act on, plus the documentation so your team can keep going with or without me.</p></div>
     </div>
   </div>
 </section>
@@ -255,13 +321,15 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow">Top skills</div>
-      <h2>The four things clients hire me for again.</h2>
+      <h2>The six things clients hire me for again.</h2>
     </div>
     <div class="skill-grid reveal">
       <div class="skill"><div class="num">01</div><h3>B2B and B2C Marketing Strategy</h3><p>Agency, e-commerce and in-house tech</p></div>
       <div class="skill"><div class="num">02</div><h3>End to End Campaign Management</h3><p>Planning through reporting</p></div>
       <div class="skill"><div class="num">03</div><h3>Problem Solving</h3><p>Behavioural psychology meets data</p></div>
       <div class="skill"><div class="num">04</div><h3>Creativity and Innovation</h3><p>Experiment-led, AI-accelerated</p></div>
+      <div class="skill"><div class="num">05</div><h3>Claude Specialist &amp; AI Workflows</h3><p>Claude used daily for research, content, reporting automation and campaign QA; also ChatGPT, Gemini, Perplexity and Manus</p></div>
+      <div class="skill"><div class="num">06</div><h3>Paid, Programmatic &amp; HubSpot</h3><p>Google, Meta, LinkedIn, TikTok, DV360, The Trade Desk, Amazon DSP; HubSpot, Klaviyo, GA4</p></div>
     </div>
   </div>
 </section>
@@ -271,46 +339,106 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
     <div class="reveal">
       <div class="eyebrow">About</div>
       <h2>Founder-turned-operator, still obsessed with the funnel.</h2>
-      <img class="figure" src="https://images.hostinger.com/3578e319-a55a-4c2a-857a-80ea2650387d.png" alt="Campaign analytics and a funnel sketch on a desk">
+      <figure class="figure" aria-label="Growth funnel: diagnose, roadmap, run, report">
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#dfe5ec" stroke-width="1"/></pattern>
+    <linearGradient id="f1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1455a3"/><stop offset="1" stop-color="#0c6fe9"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="#f7f4ee"/>
+  <rect width="600" height="400" fill="url(#grid)" opacity=".6"/>
+  <!-- funnel -->
+  <g transform="translate(50,40)">
+    <path d="M0 0H300L240 70H60Z" fill="#1455a3" opacity=".18"/>
+    <path d="M60 80H240L195 150H105Z" fill="#1455a3" opacity=".38"/>
+    <path d="M105 160H195L165 230H135Z" fill="#1455a3" opacity=".62"/>
+    <path d="M135 240H165L158 290H142Z" fill="url(#f1)"/>
+    <g font-family="Inter,system-ui,sans-serif" font-size="11" letter-spacing="2" fill="#5b6b7f">
+      <text x="150" y="40" text-anchor="middle" fill="#132235">TRAFFIC</text>
+      <text x="150" y="120" text-anchor="middle" fill="#132235">LEADS</text>
+      <text x="150" y="200" text-anchor="middle" fill="#fff">MQL</text>
+      <text x="150" y="312" text-anchor="middle" fill="#1455a3" font-weight="600">REVENUE</text>
+    </g>
+    <!-- leak markers -->
+    <g stroke="#0c6fe9" stroke-width="1.5" fill="none">
+      <path d="M250 75 l28 -14" /><circle cx="280" cy="60" r="3" fill="#0c6fe9"/>
+      <path d="M200 155 l28 -14"/><circle cx="230" cy="140" r="3" fill="#0c6fe9"/>
+    </g>
+    <g font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#0c6fe9">
+      <text x="286" y="63">test 01</text>
+      <text x="236" y="143">test 02</text>
+    </g>
+  </g>
+  <!-- experiment chart -->
+  <g transform="translate(400,60)">
+    <rect x="0" y="0" width="150" height="150" fill="#fff" stroke="#dfe5ec"/>
+    <text x="12" y="20" font-family="Inter,system-ui,sans-serif" font-size="10" letter-spacing="2" fill="#5b6b7f">EXPERIMENTS</text>
+    <g fill="#1455a3">
+      <rect x="18" y="110" width="14" height="24" opacity=".35"/>
+      <rect x="40" y="96" width="14" height="38" opacity=".45"/>
+      <rect x="62" y="104" width="14" height="30" opacity=".35"/>
+      <rect x="84" y="76" width="14" height="58" opacity=".6"/>
+      <rect x="106" y="60" width="14" height="74" opacity=".8"/>
+      <rect x="126" y="40" width="14" height="94"/>
+    </g>
+    <path d="M18 100 L48 90 L72 92 L98 70 L120 55 L142 36" fill="none" stroke="#0c6fe9" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="142" cy="36" r="3.5" fill="#0c6fe9"/>
+  </g>
+  <!-- decision cards -->
+  <g transform="translate(400,226)" font-family="Inter,system-ui,sans-serif" font-size="10" letter-spacing="1.5">
+    <rect x="0" y="0" width="150" height="30" fill="#fff" stroke="#dfe5ec"/><circle cx="14" cy="15" r="4" fill="#1455a3"/><text x="26" y="19" fill="#132235">SCALE</text>
+    <rect x="0" y="38" width="150" height="30" fill="#fff" stroke="#dfe5ec"/><circle cx="14" cy="53" r="4" fill="#0c6fe9" opacity=".5"/><text x="26" y="57" fill="#132235">ITERATE</text>
+    <rect x="0" y="76" width="150" height="30" fill="#fff" stroke="#dfe5ec"/><circle cx="14" cy="91" r="4" fill="none" stroke="#5b6b7f"/><text x="26" y="95" fill="#5b6b7f">KILL</text>
+  </g>
+  <!-- footer steps -->
+  <g transform="translate(50,382)" font-family="Inter,system-ui,sans-serif" font-size="10" letter-spacing="2.5" fill="#5b6b7f">
+    <text x="0" y="0">DIAGNOSE</text><text x="120" y="0">ROADMAP</text><text x="240" y="0">RUN</text><text x="330" y="0">REPORT</text>
+    <path d="M78 -4h30M198 -4h30M272 -4h46" stroke="#dfe5ec" stroke-width="1"/>
+  </g>
+</svg>
+</figure>
     </div>
     <div class="reveal">
-      <p class="about-lead">Through Simplificate, I help teams simplify growth. Growth marketing consultant with 6+ years across paid media, brand, content, and lifecycle for B2C e-commerce, agency clients, and B2B tech companies.</p>
-      <p class="body">My background includes founding and scaling an e-commerce brand, managing programmatic and paid media campaigns for global brands such as American Express, Amazon Prime Video, Ernst &amp; Young, and Dr. Martens. At OVSoftware, I took end-to-end ownership of growth, brand, demand and lead generation strategies, from planning and messaging to campaign execution, testing, optimization, and reporting. As Growth Marketing Manager at Faslet, I led paid, organic, lifecycle, and go-to-market initiatives through continuous experimentation.</p>
-      <p class="body">I build custom growth roadmaps tailored to each business's specific needs using a structured growth methodology. Experienced in reading campaign performance through the lens of behavioral psychology and data to understand how people think, decide, and act. Quick to adapt to new tools and processes, I use AI tools and workflows daily to produce content, run experiments, and scale execution.</p>
+      <p class="about-lead">Through Simplificate, I help teams simplify growth. Growth marketing consultant with 6+ years across paid media, brand, content and lifecycle for B2C e-commerce, agency clients and B2B tech companies.</p>
+      <p class="body">My background includes founding and scaling a fashion e-commerce brand, and planning six-figure programmatic and paid media budgets for global brands at an IPG Mediabrands agency. In-house at a B2B software consultancy, I took end-to-end ownership of growth, brand, demand and lead generation, from planning and messaging to campaign execution, testing, optimisation and reporting. As Growth Marketing Manager at a B2B SaaS scale-up, I led paid, organic, lifecycle and go-to-market initiatives through continuous experimentation.</p>
+      <p class="body">I build custom growth roadmaps tailored to each business's specific needs using a structured growth methodology. Experienced in reading campaign performance through the lens of behavioural psychology and data to understand how people think, decide and act. Quick to adapt to new tools and processes, I use AI tools and workflows daily to produce content, run experiments and scale execution.</p>
+      <p class="body">Languages: Portuguese (native), English and Spanish (full professional), Dutch (intermediate). Registered freelancer (ZZP) in the Netherlands.</p>
       <div class="roles">
-        <div class="role"><h4>Growth Marketing Manager</h4><span>Faslet</span></div>
-        <div class="role"><h4>Growth, Brand &amp; Demand Gen</h4><span>OVSoftware</span></div>
-        <div class="role"><h4>Programmatic &amp; Paid Media</h4><span>Agency side, global brands</span></div>
-        <div class="role"><h4>Founder</h4><span>E-commerce brand</span></div>
+        <div class="role"><h4>Growth Marketing Consultant</h4><span>Simplificate · 2026 to present</span></div>
+        <div class="role"><h4>Growth Marketing Manager</h4><span>B2B SaaS, fashion-tech · Rotterdam</span></div>
+        <div class="role"><h4>Online Growth Marketer</h4><span>B2B software consultancy · The Hague</span></div>
+        <div class="role"><h4>Addressable Specialist, Programmatic</h4><span>Global media agency · Amsterdam</span></div>
+        <div class="role"><h4>Founder &amp; Growth Marketing Specialist</h4><span>Fashion e-commerce · Brazil</span></div>
+        <div class="role"><h4>Master's in Business Research</h4><span>University of Barcelona</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="referrals">
+<section id="results">
   <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow">Referrals</div>
-      <h2>What the people who worked with me say.</h2>
+      <div class="eyebrow">Results</div>
+      <h2>Numbers from the work, not adjectives.</h2>
     </div>
     <div class="quotes">
       <div class="quote reveal">
-        <div class="mark">&ldquo;</div>
-        <p>Roberta took full ownership of demand generation from day one. She rebuilt our messaging, launched the campaigns, and reported on them with a clarity our board had not seen before.</p>
-        <div class="name">Marijn de Vries</div>
-        <div class="role">Commercial Director, B2B Software</div>
+        <div class="big">+35%</div>
+        <p>Sales-qualified leads for a B2B software and IT consultancy, through Search and LinkedIn ABM campaigns built from an empty account, including architecture and conversion tracking.</p>
+        <div class="name">Demand generation</div>
+        <div class="role">B2B software consultancy · Netherlands</div>
       </div>
       <div class="quote reveal">
-        <div class="mark">&ldquo;</div>
-        <p>What stands out is the structure. Every experiment had a hypothesis, a budget and a decision attached to it, so we always knew what we were learning and what to do next.</p>
-        <div class="name">Sofia Almeida</div>
-        <div class="role">Founder, DTC E-commerce Brand</div>
+        <div class="big">+60% / +42%</div>
+        <p>Engagement and application volume on developer recruitment campaigns on Meta, run alongside the brand and sales funnels.</p>
+        <div class="name">Employer branding</div>
+        <div class="role">B2B software consultancy · developer hiring</div>
       </div>
       <div class="quote reveal">
-        <div class="mark">&ldquo;</div>
-        <p>She managed programmatic budgets for demanding global clients and still found time to coach the team on creative testing. Rare combination of strategist and operator.</p>
-        <div class="name">Daniel Kruger</div>
-        <div class="role">Client Services Lead, Media Agency</div>
+        <div class="big">Six-figure</div>
+        <p>Programmatic and paid media budgets planned, tested and optimised for six global consumer, media, finance and professional-services brands on DV360, Amazon DSP and The Trade Desk.</p>
+        <div class="name">Programmatic at scale</div>
+        <div class="role">Global media agency · Amsterdam</div>
       </div>
     </div>
   </div>
@@ -320,20 +448,45 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
   <div class="contact-card reveal">
     <div class="eyebrow">Contact</div>
     <h2>Let's simplify your next growth move.</h2>
-    <p>Send a short note about your business, the channels you run today and what you want to change in the next quarter. I reply within two working days with an honest view on whether I am the right fit.</p>
+    <p>Send a short note about your business, the channels you run today and what is not moving. I reply within two working days with what I would test first and a scoped proposal if it makes sense to go further.</p>
+    <div class="contact-grid">
+    <div>
     <div class="contact-actions">
-      <a class="btn btn-light" href="mailto:hello@robertacunha.com?subject=Growth%20consulting%20enquiry">
+      <a class="btn btn-light" href="mailto:robertacunha@email.com?subject=Growth%20consulting%20enquiry">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        hello@robertacunha.com
+        robertacunha@email.com
       </a>
-      <a class="btn btn-outline" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/robertarcunha" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21H9z"/></svg>
         Connect on LinkedIn
       </a>
     </div>
     <div class="loc">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      Based in the Netherlands · Working with clients across Europe
+      Based in Amsterdam · Working with clients across Europe and Brazil
+    </div>
+    </div>
+    <!-- Formulário: sem backend, monta um e-mail no cliente de e-mail do visitante.
+         Para receber direto na caixa de entrada sem depender do cliente de e-mail, crie um formulário gratuito em formspree.io,
+         troque data-formspree="" pelo endpoint (ex.: https://formspree.io/f/abcdwxyz) e o script passa a enviar por lá. -->
+    <form class="cform" id="cform" data-formspree="" novalidate>
+      <div class="row">
+        <div class="f"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required autocomplete="name"></div>
+        <div class="f"><label for="cf-company">Company</label><input id="cf-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="row">
+        <div class="f"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="f"><label for="cf-service">What do you need?</label>
+          <select id="cf-service" name="service">
+            <option>Paid media audit</option><option>Demand generation / ABM</option><option>HubSpot &amp; lifecycle</option><option>Go-to-market launch</option><option>Creative strategy</option><option>Case studies / content</option><option>LinkedIn ghostwriting</option><option>Employer branding</option><option>Brazil / LatAm market entry</option><option>E-commerce audit</option><option>AI workflows &amp; training</option><option>Not sure yet</option>
+          </select></div>
+      </div>
+      <div class="f"><label for="cf-channels">Channels you run today</label><input id="cf-channels" name="channels" type="text" placeholder="e.g. Google Ads, LinkedIn, HubSpot email"></div>
+      <div class="f"><label for="cf-msg">What is not moving?</label><textarea id="cf-msg" name="message" required placeholder="A few lines on the business, the goal for the next quarter and where you are stuck."></textarea></div>
+      <button class="btn btn-light" type="submit">Send the note <span aria-hidden="true">↗</span></button>
+      <p class="hint">I reply within two working days. No newsletter, no automated sequence.</p>
+      <div class="ok" id="cf-ok">Thank you. Your note is on its way; I will reply within two working days.</div>
+    </form>
     </div>
   </div>
 </section>
@@ -341,13 +494,14 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 <footer class="site">
   <div class="wrap foot">
     <a href="#top" class="brand">
-      <img src="https://horizons-cdn.hostinger.com/328f15b3-260b-4a8a-b410-94c9385951e1/5f2de21e4a084000552c330dea69b866.png" alt="" style="height:28px;width:28px;border-radius:4px">
-      <span>Simplificate — Roberta Cunha</span>
+      <img src="img/logo.png" alt="" style="height:28px;width:28px;border-radius:4px">
+      <span>Simplificate · Roberta Cunha</span>
     </a>
     <nav>
       <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="#about">About</a>
-      <a href="mailto:hello@robertacunha.com">Email</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="copy">© 2026 Simplificate. All rights reserved.</div>
   </div>
@@ -356,10 +510,22 @@ footer.site{border-top:1px solid var(--border);padding:40px 0}
 <script>
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const form=document.getElementById('cform');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(!form.reportValidity())return;
+  const d=Object.fromEntries(new FormData(form).entries());
+  const ep=form.dataset.formspree;
+  if(ep){
+    try{const r=await fetch(ep,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
+      if(r.ok){form.reset();document.getElementById('cf-ok').style.display='block';return;}}catch(_){}
+  }
+  const subject=encodeURIComponent('Growth enquiry: '+d.service+(d.company?' ('+d.company+')':''));
+  const body=encodeURIComponent('Name: '+d.name+'\nCompany: '+(d.company||'-')+'\nEmail: '+d.email+'\nService: '+d.service+'\nChannels: '+(d.channels||'-')+'\n\nWhat is not moving:\n'+d.message);
+  window.location.href='mailto:robertacunha@email.com?subject='+subject+'&body='+body;
+  document.getElementById('cf-ok').style.display='block';
+});
 </script>
 
-<!-- === SELETOR DE VERSAO (remover este bloco para publicar sozinho) === -->
-<div class="vswitch"><span>Versão 1 · original</span><a href="./elegante/">ver versão 2 →</a></div>
-<!-- === FIM DO SELETOR DE VERSAO === -->
 </body>
 </html>
